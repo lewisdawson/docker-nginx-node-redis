@@ -1,0 +1,21 @@
+{
+  "name": "nginx-node-redis",
+  "version": "1.0.0",
+  "description": "An example multi-tier Docker web application stack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "docker",
+    "node",
+    "redis",
+    "nginx",
+    "example"
+  ],
+  "author": "Lewis Dawson <lew.dawson@lewdawson.com> (https://github.com/lewisdawson)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
