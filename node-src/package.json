@@ -16,6 +16,7 @@
   "author": "Lewis Dawson <lew.dawson@lewdawson.com> (https://github.com/lewisdawson)",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "node-uuid": "^1.4.7"
   }
 }
