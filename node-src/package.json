@@ -1,7 +1,7 @@
 {
-  "name": "nginx-node-redis",
+  "name": "docker-nginx-node-redis",
   "version": "1.0.0",
-  "description": "An example multi-tier Docker web application stack.",
+  "description": "An example multi-tier Docker web application stack that utilizes Nginx, Node.js, and Redis.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,8 @@
     "example"
   ],
   "author": "Lewis Dawson <lew.dawson@lewdawson.com> (https://github.com/lewisdawson)",
-  "license": "ISC",
+  "repository": "https://github.com/lewisdawson/docker-nginx-node-redis",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.13.3",
     "node-uuid": "^1.4.7"
