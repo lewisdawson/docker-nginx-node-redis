@@ -1,0 +1,23 @@
+redis:
+  image: redis
+  ports:
+    - "6379"
+express-hello-world-1:
+  build: ./node-src
+  links:
+    - redis
+  ports:
+    - "8080"
+express-hello-world-2:
+  build: ./node-src
+  links:
+    - redis
+  ports:
+    - "8090"
+nginx-hello-world:
+  build: ./nginx
+  links:
+    - express-hello-world-1:express-hello-world-1
+    - express-hello-world-2:express-hello-world-2
+  ports:
+    - "80:80"

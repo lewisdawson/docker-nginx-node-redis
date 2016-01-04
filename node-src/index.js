@@ -9,7 +9,7 @@ var express = require('express'),
 app = express();
 
 app.get('/', function(req, res) {
-    res.send(util.format('%s -- Hello World @ %s!', uuid, new Date().toISOString()));
+    res.send(util.format('%s --- Hello World @ %s!', uuid, new Date().toISOString()));
 });
 
 server = app.listen(process.env.PORT || 8080, function() {
