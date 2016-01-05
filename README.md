@@ -10,4 +10,8 @@ Details of the technologies that are used for this demonstration stack.
 
 Redis is used for the persistence layer of the stack. Note that, for this example, a data volume is *NOT* used. In English, this means that the data will not persist beyond the life of the container. This is fine for this example, but should not be used for any form of production-related development. More information about data volumes can be found [here](https://docs.docker.com/engine/userguide/dockervolumes/).
 
-The default Docker hub Redis image is used for this example. More information about the image can be found [here](https://hub.docker.com/_/redis/).  
+The default Docker hub Redis image is used for this example. More information about the image can be found [here](https://hub.docker.com/_/redis/).
+  
+## Nginx
+  
+  Nginx is used as a reverse proxy server in front of the Node.js web server. It is configured to handle ingress HTTP traffic on port 80.
